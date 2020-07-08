@@ -1,0 +1,57 @@
+completion_text: "<p>GRacias por contestar las preguntas. buen d\xEDa</p>"
+description: |-
+  Preguntas sobre tema 1
+groups:
+- id: intro
+  pages:
+  - content: "<p>Para estq quiz solo tendremos preguntas sobre x tema.</p> "
+    id: welcome
+    title: "Quiz de m\xF3dulo 1"
+    type: Page
+- id: quiz_start
+  pages:
+  - answers:
+    - <plain>Si
+    id: quizquestion31
+    prompt: ''
+    title: "Lina asisti\xF3 a la capacitaci\xF3n de Formaci\xF3n"
+    type: TextQuestion
+    value: 30.0
+  - choices:
+    - Casa Fenalco
+    - Eventos
+    - ~CORRECT~ Quizes
+    - Usuarios
+    - "~CORRECT~ Formaci\xF3n"
+    credit_mode: exact
+    id: quizquestion32
+    prompt: ''
+    shuffle: true
+    title: "Que vimos en esta capacitaci\xF3n?"
+    type: MultipleChoiceQuestion
+    value: 20.0
+  shuffle: true
+rules:
+  access:
+  - permissions:
+    - view
+    - submit_answer
+    - end_session
+    - see_correctness
+    - see_answer_after_submission
+  grade_aggregation_strategy: use_latest
+  grade_identifier: quiz15
+  grading:
+  - credit_percent: 50
+  start:
+  - if_before: 2020-07-15 09:40:25+00:00
+    if_has_fewer_sessions_than: 1
+    if_has_role:
+    - student
+    - ta
+    - instructor
+    may_list_existing_sessions: true
+    may_start_new_session: true
+  - may_list_existing_sessions: true
+    may_start_new_session: false
+title: "Quiz de m\xF3dulo 1"
