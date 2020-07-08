@@ -1,0 +1,30 @@
+completion_text: |-
+  <p>Texto para mostrar al final.</p>
+description: "M\xF3dulo descriptivo"
+next_flow_id: quiz15
+next_flow_title: Listo para el quiz?
+pages:
+- content: "<p>Este m\xF3dulo se trata de:&nbsp;</p><p><br></p><p>oweirtertbreoteont&nbsp;</p>"
+  id: intro
+  title: INICIO
+  type: Page
+- content: |-
+    <p>Poner otro video</p><p><iframe frameborder="0" src="//www.youtube.com/embed/rolSEd7ul7o" width="640" height="360" class="note-video-clip"></iframe><br></p>
+  id: page27
+  title: "Lecci\xF3n 1"
+  type: Page
+- content: "<p>Lecci\xF3n 2 videos</p><p><iframe frameborder=\"0\" src=\"//www.youtube.com/embed/buzTgihniig\"\
+    \ width=\"640\" height=\"360\" class=\"note-video-clip\"></iframe><br></p>"
+  id: page28
+  title: "Lecci\xF3n 2"
+  type: Page
+rules:
+  access:
+  - if_has_role:
+    - ta
+    - student
+    - instructor
+    permissions:
+    - view
+  grade_identifier: null
+title: "M\xF3dulo 1"
