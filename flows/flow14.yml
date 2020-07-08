@@ -1,0 +1,32 @@
+completion_text: "<p>Gracias por haber le\xEDdo nuestro m\xF3dulo 2</p>"
+description: "Descripci\xF3n m\xF3dulo 2"
+next_flow_id: quiz16
+next_flow_title: Tomemos el quiz!
+pages:
+- content: "<p>Agregar contenido m\xF3dulo 2</p><p><img src=\"https://myhub-bucket.s3.amazonaws.com/media/django-summernote/2020-07-08/dd27eebf-2518-4150-ba65-996bafedf07f.jpg\"\
+    \ style=\"width: 698px;\"></p><p>Video:</p><p><iframe frameborder=\"0\" src=\"\
+    //www.youtube.com/embed/-_vp9cAVIE0\" width=\"640\" height=\"360\" class=\"note-video-clip\"\
+    ></iframe><br></p>"
+  id: intro
+  title: INICIO
+  type: Page
+- content: |-
+    <p><img src="https://myhub-bucket.s3.amazonaws.com/media/django-summernote/2020-07-08/cf4df94a-1352-4315-9eea-1a9ba1ad1279.png" style="width: 698px;"><br></p>
+  id: page29
+  title: "Lecci\xF3n 3"
+  type: Page
+- content: |-
+    <p><img src="https://myhub-bucket.s3.amazonaws.com/media/django-summernote/2020-07-08/ad527f3d-b33a-4223-a426-7e3b3bba30cd.png" style="width: 698px;"><br></p>
+  id: page30
+  title: "Lecci\xF3n 4"
+  type: Page
+rules:
+  access:
+  - if_has_role:
+    - ta
+    - student
+    - instructor
+    permissions:
+    - view
+  grade_identifier: null
+title: Modulo 2
