@@ -1,0 +1,28 @@
+chunks:
+- content: ''
+  flows:
+  - flow_id: flow13
+    next_flow: quiz15
+    pages:
+    - flow_id: page27
+      title: "Lecci\xF3n 1"
+    - flow_id: page28
+      title: "Lecci\xF3n 2"
+    title: "M\xF3dulo 1"
+    title_next_flow: Listo para el quiz?
+  - flow_id: flow14
+    next_flow: quiz16
+    pages:
+    - flow_id: page29
+      title: "Lecci\xF3n 3"
+    - flow_id: page30
+      title: "Lecci\xF3n 4"
+    title: Modulo 2
+    title_next_flow: Tomemos el quiz!
+  id: welcome
+  introduction: "<p>Peque\xF1a introducci\xF3n del curso.</p><ul><li>Lecturas a atender</li></ul><p><img\
+    \ src=\"https://myhub-bucket.s3.amazonaws.com/media/django-summernote/2020-07-08/9dd056d8-d065-4bb1-96ea-099ce738d9b5.png\"\
+    \ style=\"width: 698px;\"></p><p><iframe frameborder=\"0\" src=\"//www.youtube.com/embed/fYk6sztgTXw\"\
+    \ width=\"640\" height=\"360\" class=\"note-video-clip\"></iframe><br></p>"
+  rules: []
+  title: Productividad
