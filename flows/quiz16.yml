@@ -1,0 +1,45 @@
+completion_text: |-
+  <p>Gracias!</p>
+description: "Descripci\xF3n m\xF3dulo 2"
+groups:
+- id: intro
+  pages:
+  - content: "<p>Descripci\xF3n m\xF3dulo 2<br></p> "
+    id: welcome
+    title: "Quiz M\xF3dulo 2"
+    type: Page
+- id: quiz_start
+  pages:
+  - choices:
+    - ~CORRECT~ No
+    - Si
+    id: quizquestion33
+    prompt: ''
+    title: Se requiere directorio para hacer un curso?
+    type: ChoiceQuestion
+    value: 50.0
+  shuffle: true
+rules:
+  access:
+  - permissions:
+    - view
+    - submit_answer
+    - end_session
+    - see_correctness
+    - see_answer_after_submission
+  grade_aggregation_strategy: use_latest
+  grade_identifier: quiz16
+  grading:
+  - credit_percent: 50
+  start:
+  - if_before: 2020-07-15 09:48:16+00:00
+    if_has_fewer_sessions_than: 1
+    if_has_role:
+    - student
+    - ta
+    - instructor
+    may_list_existing_sessions: true
+    may_start_new_session: true
+  - may_list_existing_sessions: true
+    may_start_new_session: false
+title: "Quiz M\xF3dulo 2"
