@@ -18,11 +18,11 @@ groups:
     type: TextQuestion
     value: 30.0
   - choices:
-    - Casa Fenalco
-    - Eventos
-    - ~CORRECT~ Quizes
-    - Usuarios
     - "~CORRECT~ Formaci\xF3n"
+    - Usuarios
+    - ~CORRECT~ Quizes
+    - Eventos
+    - Casa Fenalco
     credit_mode: exact
     id: quizquestion32
     prompt: ''
@@ -42,7 +42,7 @@ rules:
   grade_aggregation_strategy: use_latest
   grade_identifier: quiz15
   grading:
-  - credit_percent: 50
+  - credit_percent: 100
   start:
   - if_before: 2020-07-15 09:40:25+00:00
     if_has_fewer_sessions_than: 1
