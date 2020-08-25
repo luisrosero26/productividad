@@ -11,8 +11,8 @@ groups:
 - id: quiz_start
   pages:
   - choices:
-    - ~CORRECT~ No
     - Si
+    - ~CORRECT~ No
     id: quizquestion33
     prompt: ''
     title: Se requiere directorio para hacer un curso?
@@ -30,7 +30,7 @@ rules:
   grade_aggregation_strategy: use_latest
   grade_identifier: quiz16
   grading:
-  - credit_percent: 50
+  - credit_percent: 100
   start:
   - if_before: 2020-07-15 09:48:16+00:00
     if_has_fewer_sessions_than: 1
